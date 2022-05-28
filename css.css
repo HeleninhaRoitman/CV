@@ -1,0 +1,127 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.world{
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.score{
+    position: absolute;
+    font-size: 3vmin;
+    right: 1vmin;
+    top: 1vmin;
+}
+.tree{
+    --bottom:0;
+    position: absolute;
+    width: 7%;
+    height: 100%;
+    bottom: calc(var(--bottom)*1%);
+}
+.snake{
+    --bottom: 0;
+    --left: 0;
+    position: absolute;
+    background-color: gold;
+    width: 10%;
+    height: 10%;
+    bottom: calc(var(--bottom)*1%);
+    left: calc(var(--left)*1%);
+}
+.spider{
+    --bottom:0;
+    --left:0;
+    position: absolute;
+    background-color: aquamarine;
+    width: 5%;
+    height: 5%;
+    bottom: calc(var(--bottom)*1%);
+    left: calc(var(--left)*1%);
+}
+.banana{
+    --bottom:0;
+    --left:0;
+    position: absolute;
+    background-color: olive;
+    width: 2.5%;
+    height: 2.5%;
+    bottom: calc(var(--bottom)*1%);
+    left: calc(var(--left)*1%);
+}
+
+.monkey{
+    --left: 53.5;
+    position: absolute;
+    width: 7.5%;
+    height: 7.5%;
+    bottom: 33.3%;
+    left: calc(var(--left)*1%);
+}
+
+.menu{
+    visibility: visible;
+    z-index: 1;
+    position: absolute;
+    background-color: chocolate;
+    width: 100vw;
+    height: 100vh;
+}
+
+.play{
+    margin: auto;
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    left: 15%;
+    bottom: 40%;
+    background-color: white;
+}
+.setting{
+    margin: auto;
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    left: 15%;
+    bottom: 25%;
+    background-color: white;
+}
+
+.end{
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    background-color:grey;
+    width: 70vw;
+    height: 60vh;
+}
+
+.again{
+    margin: auto;
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    left: 15%;
+    bottom: 25%;
+    background-color: white;
+}
+
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    left: 20%;
+    bottom: 60%;
+}
